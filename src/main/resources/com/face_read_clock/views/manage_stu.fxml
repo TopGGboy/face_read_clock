@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0"
+      prefWidth="934.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.face_read_clock.Controller.ManageStu_C" stylesheets="@../css/test.css"
+      styleClass="pane-background">
+    <children>
+        <TableView fx:id="StudentView" layoutX="89.0" layoutY="78.0" prefHeight="546.0" prefWidth="757.0">
+            <styleClass>table-view</styleClass>
+            <columns>
+                <TableColumn fx:id="StuId" prefWidth="136.0" text="学号"/>
+                <TableColumn fx:id="StuName" prefWidth="113.0" text="姓名"/>
+                <TableColumn fx:id="StuSex" minWidth="0.0" prefWidth="55.0" text="性别"/>
+                <TableColumn fx:id="StuClass" minWidth="0.0" prefWidth="180.0" text="班级"/>
+                <TableColumn fx:id="StuStatus" minWidth="0.0" prefWidth="72.0" text="打卡状态"/>
+                <TableColumn fx:id="StuFace" minWidth="0.0" prefWidth="92.0" text="人脸录入状态"/>
+                <TableColumn fx:id="StuClockTime" prefWidth="108.0" text="打卡时间"/>
+            </columns>
+        </TableView>
+        <Label styleClass="labels" alignment="CENTER" layoutX="343.0" prefHeight="72.0" prefWidth="249.0"
+               text="管理学生">
+            <font>
+                <Font size="61.0"/>
+            </font>
+        </Label>
+        <Button styleClass="button-style" fx:id="add_stu" layoutX="194.0" layoutY="649.0" mnemonicParsing="false"
+                onAction="#add_view"
+                prefHeight="60.0" prefWidth="115.0" text="新增学生"/>
+        <Button styleClass="button-style" fx:id="delete_stu" layoutX="672.0" layoutY="649.0" mnemonicParsing="false"
+                onAction="#delete_stu"
+                prefHeight="60.0" prefWidth="115.0" text="删除学生"/>
+        <Button styleClass="button-style" fx:id="update_stu" layoutX="436.0" layoutY="649.0" mnemonicParsing="false"
+                onAction="#update_stu"
+                prefHeight="60.0" prefWidth="115.0" text="修改学生信息"/>
+        <Button styleClass="button-style" fx:id="add_stu1" layoutX="14.0" layoutY="13.0" mnemonicParsing="false"
+                onAction="#return_main"
+                prefHeight="53.0" prefWidth="99.0" text="返回主界面"/>
+        <Button styleClass="button-style" fx:id="input_face" layoutX="30.0" layoutY="657.0" mnemonicParsing="false"
+                onAction="#input_face"
+                prefHeight="60.0" prefWidth="146.0" text="录入人脸"/>
+        <Button styleClass="button-style" fx:id="add_stu2" layoutX="176.0" layoutY="10.0" mnemonicParsing="false"
+                onAction="#delete_clock"
+                prefHeight="53.0" prefWidth="76.0" text="一键未打卡"/>
+    </children>
+</Pane>

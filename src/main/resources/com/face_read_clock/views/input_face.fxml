@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="934.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.face_read_clock.Controller.InputFace_C">
+    <children>
+        <ImageView fx:id="ImgView" fitHeight="483.0" fitWidth="564.0" layoutX="185.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="402.0" layoutY="664.0" mnemonicParsing="false" onAction="#begin_input" prefHeight="67.0" prefWidth="155.0" text="开始录入" />
+      <Button layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#return_Ma" prefHeight="67.0" prefWidth="155.0" text="返回"  />
+    </children>
+</Pane>

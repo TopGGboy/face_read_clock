@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="582.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.face_read_clock.Controller.AddStu_C">
+    <children>
+        <Label alignment="CENTER" layoutX="119.0" layoutY="41.0" prefHeight="45.0" prefWidth="92.0" text="学号:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="119.0" layoutY="101.0" prefHeight="45.0" prefWidth="92.0" text="姓名:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="100.0" layoutY="162.0" prefHeight="51.0" prefWidth="92.0" text="打卡状态:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="119.0" layoutY="225.0" prefHeight="45.0" prefWidth="92.0" text="班级:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="119.0" layoutY="280.0" prefHeight="45.0" prefWidth="92.0" text="性别:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="34.0" layoutY="344.0" prefHeight="45.0" prefWidth="170.0"
+               text="人脸录入状态:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="95.0" layoutY="406.0" prefHeight="45.0" prefWidth="102.0" text="打卡时间:">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="StuId" layoutX="194.0" layoutY="52.0" prefHeight="23.0" prefWidth="140.0"/>
+        <TextField fx:id="StuName" layoutX="194.0" layoutY="112.0" prefHeight="23.0" prefWidth="140.0"/>
+        <ChoiceBox fx:id="StuStatus" layoutX="194.0" layoutY="176.0" prefHeight="23.0" prefWidth="140.0"/>
+        <ChoiceBox fx:id="StuSex" layoutX="194.0" layoutY="291.0" prefHeight="23.0" prefWidth="140.0"/>
+        <ChoiceBox fx:id="StuFace" layoutX="194.0" layoutY="355.0" prefHeight="23.0" prefWidth="140.0"/>
+        <TextField fx:id="StuClass" layoutX="194.0" layoutY="236.0" prefHeight="23.0" prefWidth="204.0"/>
+        <TextField fx:id="StuClockTime" layoutX="194.0" layoutY="417.0" prefHeight="23.0" prefWidth="140.0"/>
+        <Button layoutX="264.0" layoutY="510.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="73.0" text="添加" onAction="#AddStuToSql"/>
+        <Button layoutX="93.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancel" prefHeight="45.0"
+                prefWidth="73.0" text="取消"/>
+    </children>
+</AnchorPane>
